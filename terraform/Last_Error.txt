@@ -1,0 +1,5 @@
+Error: Error creating DB Option Group: InvalidParameterValue: The parameter MajorEngineVersion must be provided and must not be blank.
+        status code: 400, request id: 191388e2-c748-40df-8331-2fff470c733d
+
+  on .terraform\modules\db\terraform-aws-modules-terraform-aws-rds-6f57c04\modules\db_option_group\main.tf line 1, in resource "aws_db_option_group" "this":
+   1: resource "aws_db_option_group" "this" {
