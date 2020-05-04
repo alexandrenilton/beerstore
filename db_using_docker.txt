@@ -1,0 +1,17 @@
+----------------------------------------------------------------------------
+## POSTGRESQL 9.4 local - avec la base de données d'unielo
+user: root or postgres
+password: c5j2a8i4
+install dir: C:\Install\PostgreSQL\9.4
+data dir: C:\Install\PostgreSQL\9.4\data
+
+Portuguese, Brazil
+----------------------------------------------------------------------------
+
+## POSTGRESQL 10.5 - dans le Docker CE
+docker run -p 5433:5432 --name beerdb -e POSTGRES_USER=beerstore -e POSTGRES_PASSWORD=beerstore -e POSTGRES_DB=beerstore -d postgres:10.5-alpine
+
+User: beerstore
+Password: beerstore
+db: beerstore
+url: localhost:5433

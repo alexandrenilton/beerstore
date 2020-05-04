@@ -1,0 +1,134 @@
+{
+	"info": {
+		"_postman_id": "1975d9f1-df35-40db-92f3-5362647ad653",
+		"name": "BeerStore project",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "localhost:8080/beers",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/beers",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"beers"
+					]
+				},
+				"description": "Get All beers"
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8080/beers",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"name\" : \"Eisenbahn Witzenbier\",\n\t\"type\" : \"WIT\",\n\t\"volume\" : \"355\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/beers",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"beers"
+					]
+				},
+				"description": "Post - Insert a new beer"
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8080/beers",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"volume\" : \"355\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/beers",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"beers"
+					]
+				},
+				"description": "POST - Missing name and type"
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8080/beers",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"volume\" : \"355\",\n\t\"name\": \"Colorado\",\n\t\"type\": \"APasdfA\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/beers",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"beers"
+					]
+				},
+				"description": "Invalid post"
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
